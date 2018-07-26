@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'angular2-cookie/services/cookies.service';
-
+import { TopnavComponent } from '../app/topnav/topnav.component'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,6 +25,11 @@ export class AppComponent implements OnInit{
       } 
     }
   }
+
+  sideBar(){
+    document.getElementById("content").style.marginLeft = "150px";
+  }
+  
   ngOnInit(){
   }
 }

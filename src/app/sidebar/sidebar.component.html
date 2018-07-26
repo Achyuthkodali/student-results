@@ -1,10 +1,10 @@
-<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-animate-left overlay" style="display:none;z-index:5" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large" style="padding-top: 0px;" (click)="on_close()">Close &times;</button>
   <a routerLink="enterresults" class="w3-bar-item w3-button">Enter Results</a>
   <a routerLink="viewresults" class="w3-bar-item w3-button">View Results</a>
 </div>
 
-<div class="w3-overlay w3-animate-opacity" (click)="on_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-overlay w3-animate-left" (click)="on_close()"  style="cursor:pointer" id="myOverlay"></div>
 
 <div>
   <button class="w3-button w3-white w3-xxlarge" (click)="on_open()">&#9776;</button>
