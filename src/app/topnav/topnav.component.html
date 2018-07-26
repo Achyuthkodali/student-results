@@ -1,0 +1,16 @@
+<div>
+    <ul class="nav justify-content-end" style="padding-top: 10px;padding-bottom: 10px;">
+        <li *ngIf="canShow()" class="nav-item"><a routerLink="login" class="btn btn-primary" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite;">SignIn</a></li>
+        <li *ngIf="canShow()" class="nav-item"><a routerLink="register" class="btn btn-primary" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite; margin-left: 5px;margin-right: 10px;">Register</a></li>
+        <li *ngIf="isLogin()" class="nav-item"><h4>Howdy, <strong>{{name}}</strong></h4></li>
+        <li *ngIf="isLogin()" class="nav-item dropdownmain"> 
+            <div class="dropdown">
+                <i class="myIcon fas fa-user-circle dropdown dropleft" style="font-size: 40px; margin-left: 10px; margin-right: 10px;"></i>
+                <div class="dropdown-content">
+                    <button (click)="signOut()" class="dropbtn btn btn-primary" id="SignOutButton" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite; margin-top: 10px;">SignOut</button>
+                </div>
+            </div>
+        </li>
+        <li *ngIf="isLogin()" class="nav-item"></li>
+    </ul>
+</div>

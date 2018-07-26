@@ -1,0 +1,7 @@
+<div id="container">
+  <app-topnav></app-topnav>
+  <app-sidebar *ngIf="isLogin()" style="float: left;"></app-sidebar>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div> 

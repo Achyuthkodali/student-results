@@ -1,0 +1,71 @@
+.table{
+    margin-top: auto;
+    margin-left: 200px;
+
+}
+
+.inputtag{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;    
+}
+
+th,td{
+    width: 200px;
+    text-align: center;
+    border-bottom: 3px solid rgba(8, 8, 8, 0.342);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 2px;
+}
+
+.studentdetails{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.787);
+    border-radius: 10px;
+    height: 26px;
+    text-align: center;
+}
+
+.studentdetails1{
+    margin-left: 440px;
+}
+
+.submitbutton {
+    width: 200px;
+    height: 26px;
+    background-color: rgba(24, 131, 60, 0.719); 
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+.submitbutton:hover{
+    height: 40px;
+    width: 250px;
+}
+
+#welcome{
+    font-size: 60px;
+    color: rgba(16, 110, 110, 0.863);
+    margin-left: 20%;
+}
+
+#signout{
+    background-color: rgba(24, 131, 60, 0.719);
+    border: none;
+    border-radius: 10px;
+    color: aliceblue; 
+    margin-left: 70%;
+}
+
+#signout:hover{
+    background-color: rgb(2, 24, 2);
+}

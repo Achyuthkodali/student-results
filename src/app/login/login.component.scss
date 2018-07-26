@@ -1,0 +1,34 @@
+.login_box{
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(197, 211, 211, 0.329);
+    border-radius: 30px;
+}
+
+#Username,#Password,#submitbutton{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(90, 88, 88, 0.541);
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#avatar{
+ width: 100px;
+ margin-left: 40%;
+ margin-top: 3%;
+}
+
+#Username{
+    margin-top: 50px;
+}
+
+#submitbutton{
+    background-color: rgba(69, 143, 69, 0.603);
+    font-weight: bold;
+    color: azure
+}

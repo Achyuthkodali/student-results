@@ -1,0 +1,56 @@
+.table{
+    margin-top: auto;
+    margin-left: 13%;
+}
+
+.id-input{
+    width: 100%;
+}
+
+input[type=text]{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    border: 2px groove rgba(82, 75, 75, 0.525);
+    border-radius: 5px;    
+}
+
+th,td{
+    width: 200px;
+    text-align: center;
+    border-bottom: 3px solid rgba(8, 8, 8, 0.342);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 2px;
+}
+
+
+
+.submit{
+    background-color: rgba(20, 80, 20, 0.664);
+    width: 100px;
+    height: 26px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.submit:hover{
+    height: 40px;
+    width: 150px;
+}
+
+label{
+    width: auto;
+    background-color: aqua;
+}
+
+#id{
+    margin: auto;
+    margin-top: 100px;
+}
+
+h4{
+    color: black;
+}
