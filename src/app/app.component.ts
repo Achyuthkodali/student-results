@@ -26,8 +26,16 @@ export class AppComponent implements OnInit{
     }
   }
 
-  sideBar(){
-    document.getElementById("content").style.marginLeft = "150px";
+  public on_open(){
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("content").style.marginLeft = "160px";
+  }
+
+  public on_close(){
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("content").style.marginLeft = "0px";
   }
   
   ngOnInit(){

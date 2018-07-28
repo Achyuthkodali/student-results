@@ -8,7 +8,7 @@ import { AppComponent } from '../app.component'
   styleUrls: ['./topnav.component.scss']
 })
 export class TopnavComponent implements OnInit {
-  a = new AppComponent();
+  
   public href = window.location.href;
   public home = "http://locahost:4200/";
   public login = "http://localhost:4200/login";

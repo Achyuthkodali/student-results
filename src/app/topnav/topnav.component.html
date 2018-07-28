@@ -1,19 +1,6 @@
 <div>
     
     <ul class="nav justify-content-end" style="padding-top: 10px;padding-bottom: 10px;">
-        <li *ngIf="isLogin1()" style="margin-right: 80%;">
-            <div class="w3-sidebar w3-bar-block w3-animate-left overlay" style="display:none;z-index:5" id="mySidebar">
-                <button class="w3-bar-item w3-button w3-large" style="padding-top: 0px;" (click)="on_close()">Close &times;</button>
-                <a routerLink="enterresults" class="w3-bar-item w3-button">Enter Results</a>
-                <a routerLink="viewresults" class="w3-bar-item w3-button">View Results</a>
-                </div>
-                
-                <div class="w3-overlay w3-animate-left" (click)="on_close()"  style="cursor:pointer" id="myOverlay"></div>
-                
-                <div>
-                <button class="w3-button w3-white w3-xxlarge" (click)="on_open()">&#9776;</button>
-            </div>
-        </li>
         <li *ngIf="canShow()" class="nav-item"><a routerLink="login" class="btn btn-primary" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite;">SignIn</a></li>
         <li *ngIf="canShow()" class="nav-item"><a routerLink="register" class="btn btn-primary" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite; margin-left: 5px;margin-right: 10px;">Register</a></li>
         <li *ngIf="isLogin()" class="nav-item"><h4>Howdy, <strong>{{name}}</strong></h4></li>
@@ -21,6 +8,7 @@
             <div class="dropdown">
                 <i class="myIcon fas fa-user-circle dropdown dropleft" style="font-size: 40px; margin-left: 10px; margin-right: 10px;"></i>
                 <div class="dropdown-content">
+                    <a routerLink="user" class="btn btn-primary">Profile</a>
                     <button (click)="signOut()" class="dropbtn btn btn-primary" id="SignOutButton" style="background-color: rgba(34, 94, 34, 0.651); color: ghostwhite; margin-top: 10px;">SignOut</button>
                 </div>
             </div>
